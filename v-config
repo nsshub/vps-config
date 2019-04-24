@@ -1,0 +1,13 @@
+sudo apt update && 
+sudo apt upgrade -y && 
+sudo apt autoremove -y && 
+sudo adduser vector && 
+sudo usermod -aG sudo vector && 
+su - vector && 
+sudo apt install mosh -y && 
+sudo apt install ssh -y && 
+sudo ufw allow ssh && 
+sudo ufw allow mosh && 
+sudo ufw enable && 
+sudo ufw status && 
+sudo reboot
